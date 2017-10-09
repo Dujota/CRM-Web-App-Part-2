@@ -1,48 +1,54 @@
-* {
-  box-sizing: border-box;
-  font-family: Helvetica, arial, sans-serif;
-}
-
-main {
-  max-width: 909px;
-  margin: 0px auto;
-}
-
-
-footer{
-  text-align: center;
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-
- /* NavBar styling */
-nav{
- background-color: #d9d9d9;
-}
-
-ul{
-  text-align: center;
-  padding-left: 0px;
-  margin-top: 0px;
-}
-
-nav.link{
-  background-color: #d9d9d9;
-  text-align: center;
-  list-style: none;
-}
-
-.link a{
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 1.2em;
+/*set all to 0 margin, 0 padding with a default font*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /*Header Styling*/
-.title{
-  padding-top: 10px;
+header{
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
+  padding: .7em;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+/*Navigation Bar Styling*/
+nav{
+  text-align: center;
+}
+
+nav a{
+  display: inline-block;
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #d9d9d9;
+  font-weight: 600;
+}
+
+nav a:hover{
+  background: #f9ecec;
+  color: 000000;
+}
+
+nav ul li {
+  padding: 0.4em;
+  border-bottom: solid 4px #FFFFFF;
+}
+
+li{
+  list-style: none;
+}
+
+
+
+
+/*Footer styling*/
+footer{
+  
 }
