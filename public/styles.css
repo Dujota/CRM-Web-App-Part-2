@@ -59,6 +59,29 @@ main{
   padding: 0.8em;
 }
 
+/*Heading for each ERB file*/
+main h1{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+/*Contact.erb Styling*/
+
+/* styling for count banner on contact page */
+main section.count{
+  display: inline-block;
+  width: 100%;
+  padding: 0.3em;
+  background-color: #ffbf00;
+  border-bottom: solid #FFFFFF 4px;
+}
+
+main section.count span{
+font-weight: 600;
+border-bottom: solid 2px #ccffff;
+}
+
 
 
 
