@@ -6,14 +6,14 @@
 <!-- List out contact information  -->
 
 <section class="contact">
-  <ul class="contact_list">
+  <ul>
     <% @contacts.each do |contact| %>
-      <li class="each_contact">
+      <li>
         <%= " ID: #{contact.id} Name: #{contact.full_name} Email:#{contact.email}" %>
+        <aside>
+          <a href="#">Edit</a>|<a href="#">Delete</a>
+        </aside>
       </li>
-      <aside>
-        <a href="#">Edit</a>|<a href="#">Delete</a>
-      </aside>
     <% end %>
   </section>
 </ul>
