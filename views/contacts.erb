@@ -1,17 +1,21 @@
-<h1>Here are my contacts</h1>
+<h1>Contacts</h1>
 
-<h2>There are <strong> <%=@contacts.length%> </strong> contacts in the order they were saved:</h2>
-
-<!-- List out contact information  -->
-<section class="contact">
-<ul class="contact_list">
-  <% @contacts.each do |contact| %>
-  <li class="each_contact">
-    <%= " ID: #{contact.id} Name: #{contact.full_name} Email:#{contact.email} Note: #{contact.note}  " %>
-  </li>
-  <aside>
-    <a href="#">Edit</a>|<a href="#">Delete</a>
-  </aside>
+<section class="count">
+  There are <span> <strong> <%= @contacts.length%> </strong> </span> contacts
 </section>
-  <% end %>
+<!-- List out contact information  -->
+
+
+
+<section class="contact">
+  <ul class="contact_list">
+    <% @contacts.each do |contact| %>
+      <li class="each_contact">
+        <%= " ID: #{contact.id} Name: #{contact.full_name} Email:#{contact.email}" %>
+      </li>
+      <aside>
+        <a href="#">Edit</a>|<a href="#">Delete</a>
+      </aside>
+    <% end %>
+  </section>
 </ul>
